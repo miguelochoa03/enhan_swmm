@@ -12,6 +12,7 @@ class Edge:
         self.target = target
 def toBPMN():
     print("\nConverting CSV File...\n")
+    # starting
     xml = []
     xml.append("<?xml version='1.0' encoding='UTF-8'?>\n")
     xml.append("<bpmn:definitions xmlns:bpmn='http://www.omg.org/spec/BPMN/20100524/MODEL' id='Definitions_1'>\n")
@@ -36,6 +37,7 @@ def toBPMN():
     xml.append("<bpmn:endEvent id='EndEvent_1'/>\n")
     xml.append("<bpmn:sequenceFlow id='Flow_end_1' sourceRef='Task_decreased_fish' targetRef='EndEvent_1'/>\n")
     
+    # ending
     xml.append("</bpmn:process>\n")
     xml.append("</bpmn:definitions>\n")
     
