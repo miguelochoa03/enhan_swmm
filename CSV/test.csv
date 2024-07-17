@@ -1,0 +1,8 @@
+r1,r2,r3
+node,channel_alteration,human_activity
+node,impoundments,source
+node,decreased_discharge_and_water_velocity,interacting_stressor
+node,decreased_fish,response
+edge,channel_alteration,impoundments
+edge,impoundments,decreased_discharge_and_water_velocity
+edge,decreased_discharge_and_water_velocity,decreased_fish
