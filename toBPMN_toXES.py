@@ -3,41 +3,47 @@ import pandas as pd
 import pm4py
 import os
 class Node:    
-    def __init__(self, node_id, legend_id):
+    def __init__(self, node_id, legend_id, start_or_end):
         self.node_id = node_id
         self.legend_id = legend_id
+        self.start_or_end = start_or_end
 class Edge:
     def __init__(self, source, target):
         self.source = source
         self.target = target
 def toBPMN():
     print("\nConverting CSV File...\n")
-    # starting
     xml = []
     xml.append("<?xml version='1.0' encoding='UTF-8'?>\n")
     xml.append("<bpmn:definitions xmlns:bpmn='http://www.omg.org/spec/BPMN/20100524/MODEL' id='Definitions_1'>\n")
     xml.append("<bpmn:process id='Process_1' isExecutable='true'>\n")
     
     # creating start event(s)
-    xml.append("<bpmn:startEvent id='StartEvent_1'/>\n")
-    xml.append("<bpmn:sequenceFlow id='Flow_start_1' sourceRef='StartEvent_1' targetRef='Task_channel_alteration'/>\n")
+    startID = 0
+    for node in node_list:
+        if (node.start_or_end == "start"):
+            startID = startID + 1
+            xml.append(f"<bpmn:startEvent id='StartEvent_{startID}'/>\n")
+            xml.append(f"<bpmn:sequenceFlow id='Flow_start_{startID}' sourceRef='StartEvent_{startID}' targetRef='Task_{node.node_id}'/>\n")
     
     # creating nodes
     for node in node_list:
         xml.append(f"<bpmn:task id='Task_{node.node_id}' name='{node.node_id}'/>\n")
         
-    flow_ID = 0
-    
     # creating edges
+    flow_ID = 0
     for edge in edge_list:
         flow_ID = flow_ID + 1
         xml.append(f"<bpmn:sequenceFlow id='Flow_{flow_ID}' sourceRef='Task_{edge.source}' targetRef='Task_{edge.target}'/>\n")
     
     # creating end event(s)
-    xml.append("<bpmn:endEvent id='EndEvent_1'/>\n")
-    xml.append("<bpmn:sequenceFlow id='Flow_end_1' sourceRef='Task_decreased_fish' targetRef='EndEvent_1'/>\n")
+    endID = 0
+    for node in node_list:
+        if node.start_or_end == "end":
+            endID = endID + 1
+            xml.append(f"<bpmn:endEvent id='EndEvent_{endID}'/>\n")
+            xml.append(f"<bpmn:sequenceFlow id='Flow_end_{endID}' sourceRef='Task_{node.node_id}' targetRef='EndEvent_{endID}'/>\n")
     
-    # ending
     xml.append("</bpmn:process>\n")
     xml.append("</bpmn:definitions>\n")
     
@@ -69,24 +75,31 @@ def bpmn_to_xes():
 node_list = []
 edge_list = []
 
+# all you need to do is change the file name
 file_name = "Ammonia_Detailed"
 
+# dataframe of the csv file
 df = pd.read_csv(f"C:\\Users\\Anthony\\Desktop\\Python\\CSV\\{file_name}.csv")
 
+# iterating through the dataframe of the csv
 for index, row in df.iterrows():
         r1 = row['r1']
         r2 = row['r2']
         r3 = row['r3']
+        r4 = row['r4']
 
         if r1 == "edge":
             edge_list.append(Edge(r2, r3))
         elif r1 == "node":
-            node_list.append(Node(r2, r3))
-    
+            node_list.append(Node(r2, r3, r4))
+
+# correct format of the bpmn file
 xmlBPMN = toBPMN()    
 
 file_path_name = f"C:\\Users\\Anthony\\Desktop\\Python\\BPMN\\{file_name}_Py.bpmn"
 
+# saving bpmn file in folder
 save_to_file(xmlBPMN, file_path_name)
 
+# function for converting the bpmn file into xes
 bpmn_to_xes()
