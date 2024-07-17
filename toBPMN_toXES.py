@@ -3,10 +3,9 @@ import pandas as pd
 import pm4py
 import os
 class Node:    
-    def __init__(self, node_id, legend_id, start_or_end):
+    def __init__(self, node_id, legend_id):
         self.node_id = node_id
         self.legend_id = legend_id
-        self.start_or_end = start_or_end
 class Edge:
     def __init__(self, source, target):
         self.source = source
@@ -21,7 +20,7 @@ def toBPMN():
     # creating start event(s)
     startID = 0
     for node in node_list:
-        if (node.start_or_end == "start"):
+        if (node.legend_id == "human_activity"):
             startID = startID + 1
             xml.append(f"<bpmn:startEvent id='StartEvent_{startID}'/>\n")
             xml.append(f"<bpmn:sequenceFlow id='Flow_start_{startID}' sourceRef='StartEvent_{startID}' targetRef='Task_{node.node_id}'/>\n")
@@ -39,7 +38,7 @@ def toBPMN():
     # creating end event(s)
     endID = 0
     for node in node_list:
-        if node.start_or_end == "end":
+        if node.legend_id == "response":
             endID = endID + 1
             xml.append(f"<bpmn:endEvent id='EndEvent_{endID}'/>\n")
             xml.append(f"<bpmn:sequenceFlow id='Flow_end_{endID}' sourceRef='Task_{node.node_id}' targetRef='EndEvent_{endID}'/>\n")
@@ -75,31 +74,24 @@ def bpmn_to_xes():
 node_list = []
 edge_list = []
 
-# all you need to do is change the file name for the csv file
 file_name = "Ammonia_Detailed"
 
-# dataframe of the csv file
 df = pd.read_csv(f"C:\\Users\\Anthony\\Desktop\\Python\\CSV\\{file_name}.csv")
 
-# iterating through the dataframe of the csv
 for index, row in df.iterrows():
         r1 = row['r1']
         r2 = row['r2']
         r3 = row['r3']
-        r4 = row['r4']
 
         if r1 == "edge":
             edge_list.append(Edge(r2, r3))
         elif r1 == "node":
-            node_list.append(Node(r2, r3, r4))
-
-# correct format of the bpmn file
+            node_list.append(Node(r2, r3))
+    
 xmlBPMN = toBPMN()    
 
 file_path_name = f"C:\\Users\\Anthony\\Desktop\\Python\\BPMN\\{file_name}_Py.bpmn"
 
-# saving bpmn file in folder
 save_to_file(xmlBPMN, file_path_name)
 
-# function for converting the bpmn file into xes
 bpmn_to_xes()
