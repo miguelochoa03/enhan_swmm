@@ -75,7 +75,7 @@ def bpmn_to_xes():
 node_list = []
 edge_list = []
 
-# all you need to do is change the file name
+# all you need to do is change the file name for the csv file
 file_name = "Ammonia_Detailed"
 
 # dataframe of the csv file
