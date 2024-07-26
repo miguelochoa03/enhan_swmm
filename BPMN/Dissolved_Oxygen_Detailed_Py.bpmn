@@ -1,0 +1,356 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bpmn:definitions xmlns:bpmn='http://www.omg.org/spec/BPMN/20100524/MODEL' id='Definitions_1'>
+<bpmn:process id='Process_1' isExecutable='true'>
+<bpmn:startEvent id='StartEvent_1'/>
+<bpmn:sequenceFlow id='Flow_start_1' sourceRef='StartEvent_1' targetRef='Task_agriculture'/>
+<bpmn:startEvent id='StartEvent_2'/>
+<bpmn:sequenceFlow id='Flow_start_2' sourceRef='StartEvent_2' targetRef='Task_urbanization'/>
+<bpmn:startEvent id='StartEvent_3'/>
+<bpmn:sequenceFlow id='Flow_start_3' sourceRef='StartEvent_3' targetRef='Task_industry'/>
+<bpmn:startEvent id='StartEvent_4'/>
+<bpmn:sequenceFlow id='Flow_start_4' sourceRef='StartEvent_4' targetRef='Task_mining_and_resource_extraction'/>
+<bpmn:startEvent id='StartEvent_5'/>
+<bpmn:sequenceFlow id='Flow_start_5' sourceRef='StartEvent_5' targetRef='Task_forestry_and_silviculture'/>
+<bpmn:startEvent id='StartEvent_6'/>
+<bpmn:sequenceFlow id='Flow_start_6' sourceRef='StartEvent_6' targetRef='Task_channel_alteration'/>
+<bpmn:task id='Task_agriculture' name='agriculture'/>
+<bpmn:task id='Task_urbanization' name='urbanization'/>
+<bpmn:task id='Task_industry' name='industry'/>
+<bpmn:task id='Task_mining_and_resource_extraction' name='mining_and_resource_extraction'/>
+<bpmn:task id='Task_forestry_and_silviculture' name='forestry_and_silviculture'/>
+<bpmn:task id='Task_geology_and_lithology' name='geology_and_lithology'/>
+<bpmn:task id='Task_other_non_point_sources' name='other_non_point_sources'/>
+<bpmn:task id='Task_historical_sources' name='historical_sources'/>
+<bpmn:task id='Task_animal_wastes' name='animal_wastes'/>
+<bpmn:task id='Task_mining_wastes' name='mining_wastes'/>
+<bpmn:task id='Task_septic_systems' name='septic_systems'/>
+<bpmn:task id='Task_landfills' name='landfills'/>
+<bpmn:task id='Task_applied_fertilizers' name='applied_fertilizers'/>
+<bpmn:task id='Task_vehicle_emissions' name='vehicle_emissions'/>
+<bpmn:task id='Task_industrial_emissions' name='industrial_emissions'/>
+<bpmn:task id='Task_WWTP_effluent' name='WWTP_effluent'/>
+<bpmn:task id='Task_industrial_effluent' name='industrial_effluent'/>
+<bpmn:task id='Task_stormwater_drainage' name='stormwater_drainage'/>
+<bpmn:task id='Task_other_point_sources' name='other_point_sources'/>
+<bpmn:task id='Task_watershed_and_riparian devegetation' name='watershed_and_riparian devegetation'/>
+<bpmn:task id='Task_channel_alteration' name='channel_alteration'/>
+<bpmn:task id='Task_downstream_impoundment' name='downstream_impoundment'/>
+<bpmn:task id='Task_increased_channel_incision' name='increased_channel_incision'/>
+<bpmn:task id='Task_decreased_permeability' name='decreased_permeability'/>
+<bpmn:task id='Task_increased_surface_runoff' name='increased_surface_runoff'/>
+<bpmn:task id='Task_increased_erosion' name='increased_erosion'/>
+<bpmn:task id='Task_increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream' name='increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream'/>
+<bpmn:task id='Task_upstream_impoundment' name='upstream_impoundment'/>
+<bpmn:task id='Task_impoundment_size_and_type_of_release' name='impoundment_size_and_type_of_release'/>
+<bpmn:task id='Task_increased_water_depth' name='increased_water_depth'/>
+<bpmn:task id='Task_decreased_large_woody_debris' name='decreased_large_woody_debris'/>
+<bpmn:task id='Task_decreased_water_velocity__additional_step_in_causal_pathway' name='decreased_water_velocity__additional_step_in_causal_pathway'/>
+<bpmn:task id='Task_decreased_turbulence' name='decreased_turbulence'/>
+<bpmn:task id='Task_increased_substrate_homogenization' name='increased_substrate_homogenization'/>
+<bpmn:task id='Task_increased_chemical_contaminants' name='increased_chemical_contaminants'/>
+<bpmn:task id='Task_increased_organic_loading' name='increased_organic_loading'/>
+<bpmn:task id='Task_increased_nutrients' name='increased_nutrients'/>
+<bpmn:task id='Task_decreased_surface_area_to_volume_ratio' name='decreased_surface_area_to_volume_ratio'/>
+<bpmn:task id='Task_decreased_diffusion' name='decreased_diffusion'/>
+<bpmn:task id='Task_altered_flow' name='altered_flow'/>
+<bpmn:task id='Task_sediment' name='sediment'/>
+<bpmn:task id='Task_increased_primary_producers' name='increased_primary_producers'/>
+<bpmn:task id='Task_increased_turbulence' name='increased_turbulence'/>
+<bpmn:task id='Task_increased_detritus_and_exudates' name='increased_detritus_and_exudates'/>
+<bpmn:task id='Task_increased_aeration' name='increased_aeration'/>
+<bpmn:task id='Task_decreased_aeration' name='decreased_aeration'/>
+<bpmn:task id='Task_increased_microbes' name='increased_microbes'/>
+<bpmn:task id='Task_increased_organic_matter_retention' name='increased_organic_matter_retention'/>
+<bpmn:task id='Task_increased_photosynthesis' name='increased_photosynthesis'/>
+<bpmn:task id='Task_increased_heterotrophic_respiration' name='increased_heterotrophic_respiration'/>
+<bpmn:task id='Task_increased_autotrophic_respiration' name='increased_autotrophic_respiration'/>
+<bpmn:task id='Task_increased_oxygen_production' name='increased_oxygen_production'/>
+<bpmn:task id='Task_increased_chemical_oxygen_demand' name='increased_chemical_oxygen_demand'/>
+<bpmn:task id='Task_increased_biochemical_oxygen_demand' name='increased_biochemical_oxygen_demand'/>
+<bpmn:task id='Task_decreased_oxygen_in_discharged_waters' name='decreased_oxygen_in_discharged_waters'/>
+<bpmn:task id='Task_increased_temperature' name='increased_temperature'/>
+<bpmn:task id='Task_increased_ionic_strength' name='increased_ionic_strength'/>
+<bpmn:task id='Task_increased_sediment' name='increased_sediment'/>
+<bpmn:task id='Task_decreased_oxygen_solubility' name='decreased_oxygen_solubility'/>
+<bpmn:task id='Task_decreased_interstitial_flow' name='decreased_interstitial_flow'/>
+<bpmn:task id='Task_decreased_dissolved_oxygen__water_or_sediment' name='decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:task id='Task_increased_DO_fluctuation__water_or_sediment' name='increased_DO_fluctuation__water_or_sediment'/>
+<bpmn:task id='Task_increased_dissolved_oxygen__water_or_sediment' name='increased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:task id='Task_altered_flow' name='altered_flow'/>
+<bpmn:task id='Task_decreased_water_velocity__mode_of_action' name='decreased_water_velocity__mode_of_action'/>
+<bpmn:task id='Task_decreased_oxygen_delivery' name='decreased_oxygen_delivery'/>
+<bpmn:task id='Task_increased_respiratory_stress' name='increased_respiratory_stress'/>
+<bpmn:task id='Task_increased_reduction__decreased_Eh' name='increased_reduction__decreased_Eh'/>
+<bpmn:task id='Task_change_in_behavior' name='change_in_behavior'/>
+<bpmn:task id='Task_increased_oxygen_supersaturation' name='increased_oxygen_supersaturation'/>
+<bpmn:task id='Task_increased_oxidation__increased_Eh' name='increased_oxidation__increased_Eh'/>
+<bpmn:task id='Task_increased_phosphate_solubility' name='increased_phosphate_solubility'/>
+<bpmn:task id='Task_increased_ventilatory_movements' name='increased_ventilatory_movements'/>
+<bpmn:task id='Task_increased_gasping_at_water_surface' name='increased_gasping_at_water_surface'/>
+<bpmn:task id='Task_change_in_other_behaviors' name='change_in_other_behaviors'/>
+<bpmn:task id='Task_increased_metal_solubility' name='increased_metal_solubility'/>
+<bpmn:task id='Task_increased_phosphorus' name='increased_phosphorus'/>
+<bpmn:task id='Task_increased_mortality' name='increased_mortality'/>
+<bpmn:task id='Task_increased_gas_bubble_trauma' name='increased_gas_bubble_trauma'/>
+<bpmn:task id='Task_increased_metals' name='increased_metals'/>
+<bpmn:task id='Task_change_in_population_and_community_structure' name='change_in_population_and_community_structure'/>
+<bpmn:task id='Task_change_in_ecosystem_processes' name='change_in_ecosystem_processes'/>
+<bpmn:task id='Task_increased_fish_kills' name='increased_fish_kills'/>
+<bpmn:task id='Task_decreased_sensitive_life_stages' name='decreased_sensitive_life_stages'/>
+<bpmn:task id='Task_decreased_sensitive_taxa' name='decreased_sensitive_taxa'/>
+<bpmn:task id='Task_increased_tolerant_taxa' name='increased_tolerant_taxa'/>
+<bpmn:task id='Task_increased_tolerant_life_stages' name='increased_tolerant_life_stages'/>
+<bpmn:task id='Task_change_in_other_characteristics' name='change_in_other_characteristics'/>
+<bpmn:task id='Task_fire_smoke_and_ash' name='fire_smoke_and_ash'/>
+<bpmn:sequenceFlow id='Flow_1' sourceRef='Task_agriculture' targetRef='Task_downstream_impoundment'/>
+<bpmn:sequenceFlow id='Flow_2' sourceRef='Task_agriculture' targetRef='Task_channel_alteration'/>
+<bpmn:sequenceFlow id='Flow_3' sourceRef='Task_agriculture' targetRef='Task_watershed_and_riparian devegetation'/>
+<bpmn:sequenceFlow id='Flow_4' sourceRef='Task_agriculture' targetRef='Task_other_non_point_sources'/>
+<bpmn:sequenceFlow id='Flow_5' sourceRef='Task_agriculture' targetRef='Task_historical_sources'/>
+<bpmn:sequenceFlow id='Flow_6' sourceRef='Task_agriculture' targetRef='Task_fire_smoke_and_ash'/>
+<bpmn:sequenceFlow id='Flow_7' sourceRef='Task_agriculture' targetRef='Task_animal_wastes'/>
+<bpmn:sequenceFlow id='Flow_8' sourceRef='Task_agriculture' targetRef='Task_mining_wastes'/>
+<bpmn:sequenceFlow id='Flow_9' sourceRef='Task_agriculture' targetRef='Task_septic_systems'/>
+<bpmn:sequenceFlow id='Flow_10' sourceRef='Task_agriculture' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_11' sourceRef='Task_agriculture' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_12' sourceRef='Task_agriculture' targetRef='Task_vehicle_emissions'/>
+<bpmn:sequenceFlow id='Flow_13' sourceRef='Task_agriculture' targetRef='Task_industrial_emissions'/>
+<bpmn:sequenceFlow id='Flow_14' sourceRef='Task_agriculture' targetRef='Task_WWTP_effluent'/>
+<bpmn:sequenceFlow id='Flow_15' sourceRef='Task_agriculture' targetRef='Task_industrial_effluent'/>
+<bpmn:sequenceFlow id='Flow_16' sourceRef='Task_agriculture' targetRef='Task_stormwater_drainage'/>
+<bpmn:sequenceFlow id='Flow_17' sourceRef='Task_agriculture' targetRef='Task_other_point_sources'/>
+<bpmn:sequenceFlow id='Flow_18' sourceRef='Task_urbanization' targetRef='Task_downstream_impoundment'/>
+<bpmn:sequenceFlow id='Flow_19' sourceRef='Task_urbanization' targetRef='Task_channel_alteration'/>
+<bpmn:sequenceFlow id='Flow_20' sourceRef='Task_urbanization' targetRef='Task_watershed_and_riparian devegetation'/>
+<bpmn:sequenceFlow id='Flow_21' sourceRef='Task_urbanization' targetRef='Task_other_non_point_sources'/>
+<bpmn:sequenceFlow id='Flow_22' sourceRef='Task_urbanization' targetRef='Task_historical_sources'/>
+<bpmn:sequenceFlow id='Flow_23' sourceRef='Task_urbanization' targetRef='Task_fire_smoke_and_ash'/>
+<bpmn:sequenceFlow id='Flow_24' sourceRef='Task_urbanization' targetRef='Task_animal_wastes'/>
+<bpmn:sequenceFlow id='Flow_25' sourceRef='Task_urbanization' targetRef='Task_mining_wastes'/>
+<bpmn:sequenceFlow id='Flow_26' sourceRef='Task_urbanization' targetRef='Task_septic_systems'/>
+<bpmn:sequenceFlow id='Flow_27' sourceRef='Task_urbanization' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_28' sourceRef='Task_urbanization' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_29' sourceRef='Task_urbanization' targetRef='Task_vehicle_emissions'/>
+<bpmn:sequenceFlow id='Flow_30' sourceRef='Task_urbanization' targetRef='Task_industrial_emissions'/>
+<bpmn:sequenceFlow id='Flow_31' sourceRef='Task_urbanization' targetRef='Task_WWTP_effluent'/>
+<bpmn:sequenceFlow id='Flow_32' sourceRef='Task_urbanization' targetRef='Task_industrial_effluent'/>
+<bpmn:sequenceFlow id='Flow_33' sourceRef='Task_urbanization' targetRef='Task_stormwater_drainage'/>
+<bpmn:sequenceFlow id='Flow_34' sourceRef='Task_urbanization' targetRef='Task_other_point_sources'/>
+<bpmn:sequenceFlow id='Flow_35' sourceRef='Task_industry' targetRef='Task_downstream_impoundment'/>
+<bpmn:sequenceFlow id='Flow_36' sourceRef='Task_industry' targetRef='Task_channel_alteration'/>
+<bpmn:sequenceFlow id='Flow_37' sourceRef='Task_industry' targetRef='Task_watershed_and_riparian devegetation'/>
+<bpmn:sequenceFlow id='Flow_38' sourceRef='Task_industry' targetRef='Task_other_non_point_sources'/>
+<bpmn:sequenceFlow id='Flow_39' sourceRef='Task_industry' targetRef='Task_historical_sources'/>
+<bpmn:sequenceFlow id='Flow_40' sourceRef='Task_industry' targetRef='Task_fire_smoke_and_ash'/>
+<bpmn:sequenceFlow id='Flow_41' sourceRef='Task_industry' targetRef='Task_animal_wastes'/>
+<bpmn:sequenceFlow id='Flow_42' sourceRef='Task_industry' targetRef='Task_mining_wastes'/>
+<bpmn:sequenceFlow id='Flow_43' sourceRef='Task_industry' targetRef='Task_septic_systems'/>
+<bpmn:sequenceFlow id='Flow_44' sourceRef='Task_industry' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_45' sourceRef='Task_industry' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_46' sourceRef='Task_industry' targetRef='Task_vehicle_emissions'/>
+<bpmn:sequenceFlow id='Flow_47' sourceRef='Task_industry' targetRef='Task_industrial_emissions'/>
+<bpmn:sequenceFlow id='Flow_48' sourceRef='Task_industry' targetRef='Task_WWTP_effluent'/>
+<bpmn:sequenceFlow id='Flow_49' sourceRef='Task_industry' targetRef='Task_industrial_effluent'/>
+<bpmn:sequenceFlow id='Flow_50' sourceRef='Task_industry' targetRef='Task_stormwater_drainage'/>
+<bpmn:sequenceFlow id='Flow_51' sourceRef='Task_industry' targetRef='Task_other_point_sources'/>
+<bpmn:sequenceFlow id='Flow_52' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_downstream_impoundment'/>
+<bpmn:sequenceFlow id='Flow_53' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_channel_alteration'/>
+<bpmn:sequenceFlow id='Flow_54' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_watershed_and_riparian devegetation'/>
+<bpmn:sequenceFlow id='Flow_55' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_other_non_point_sources'/>
+<bpmn:sequenceFlow id='Flow_56' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_historical_sources'/>
+<bpmn:sequenceFlow id='Flow_57' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_fire_smoke_and_ash'/>
+<bpmn:sequenceFlow id='Flow_58' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_animal_wastes'/>
+<bpmn:sequenceFlow id='Flow_59' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_mining_wastes'/>
+<bpmn:sequenceFlow id='Flow_60' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_septic_systems'/>
+<bpmn:sequenceFlow id='Flow_61' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_62' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_63' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_vehicle_emissions'/>
+<bpmn:sequenceFlow id='Flow_64' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_industrial_emissions'/>
+<bpmn:sequenceFlow id='Flow_65' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_WWTP_effluent'/>
+<bpmn:sequenceFlow id='Flow_66' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_industrial_effluent'/>
+<bpmn:sequenceFlow id='Flow_67' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_stormwater_drainage'/>
+<bpmn:sequenceFlow id='Flow_68' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_other_point_sources'/>
+<bpmn:sequenceFlow id='Flow_69' sourceRef='Task_forestry_and_silviculture' targetRef='Task_downstream_impoundment'/>
+<bpmn:sequenceFlow id='Flow_70' sourceRef='Task_forestry_and_silviculture' targetRef='Task_channel_alteration'/>
+<bpmn:sequenceFlow id='Flow_71' sourceRef='Task_forestry_and_silviculture' targetRef='Task_watershed_and_riparian devegetation'/>
+<bpmn:sequenceFlow id='Flow_72' sourceRef='Task_forestry_and_silviculture' targetRef='Task_other_non_point_sources'/>
+<bpmn:sequenceFlow id='Flow_73' sourceRef='Task_forestry_and_silviculture' targetRef='Task_historical_sources'/>
+<bpmn:sequenceFlow id='Flow_74' sourceRef='Task_forestry_and_silviculture' targetRef='Task_fire_smoke_and_ash'/>
+<bpmn:sequenceFlow id='Flow_75' sourceRef='Task_forestry_and_silviculture' targetRef='Task_animal_wastes'/>
+<bpmn:sequenceFlow id='Flow_76' sourceRef='Task_forestry_and_silviculture' targetRef='Task_mining_wastes'/>
+<bpmn:sequenceFlow id='Flow_77' sourceRef='Task_forestry_and_silviculture' targetRef='Task_septic_systems'/>
+<bpmn:sequenceFlow id='Flow_78' sourceRef='Task_forestry_and_silviculture' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_79' sourceRef='Task_forestry_and_silviculture' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_80' sourceRef='Task_forestry_and_silviculture' targetRef='Task_vehicle_emissions'/>
+<bpmn:sequenceFlow id='Flow_81' sourceRef='Task_forestry_and_silviculture' targetRef='Task_industrial_emissions'/>
+<bpmn:sequenceFlow id='Flow_82' sourceRef='Task_forestry_and_silviculture' targetRef='Task_WWTP_effluent'/>
+<bpmn:sequenceFlow id='Flow_83' sourceRef='Task_forestry_and_silviculture' targetRef='Task_industrial_effluent'/>
+<bpmn:sequenceFlow id='Flow_84' sourceRef='Task_forestry_and_silviculture' targetRef='Task_stormwater_drainage'/>
+<bpmn:sequenceFlow id='Flow_85' sourceRef='Task_forestry_and_silviculture' targetRef='Task_other_point_sources'/>
+<bpmn:sequenceFlow id='Flow_86' sourceRef='Task_downstream_impoundment' targetRef='Task_decreased_water_velocity'/>
+<bpmn:sequenceFlow id='Flow_87' sourceRef='Task_downstream_impoundment' targetRef='Task_increased_water_depth'/>
+<bpmn:sequenceFlow id='Flow_88' sourceRef='Task_channel_alteration' targetRef='Task_increased_channel_incision'/>
+<bpmn:sequenceFlow id='Flow_89' sourceRef='Task_watershed_and_riparian devegetation' targetRef='Task_decreased_large_woody_debris'/>
+<bpmn:sequenceFlow id='Flow_90' sourceRef='Task_watershed_and_riparian devegetation' targetRef='Task_increased_erosion'/>
+<bpmn:sequenceFlow id='Flow_91' sourceRef='Task_watershed_and_riparian devegetation' targetRef='Task_increased_surface_runoff'/>
+<bpmn:sequenceFlow id='Flow_92' sourceRef='Task_watershed_and_riparian devegetation' targetRef='Task_decreased_permeability'/>
+<bpmn:sequenceFlow id='Flow_93' sourceRef='Task_WWTP_effluent' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_94' sourceRef='Task_WWTP_effluent' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_95' sourceRef='Task_WWTP_effluent' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_96' sourceRef='Task_industrial_effluent' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_97' sourceRef='Task_industrial_effluent' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_98' sourceRef='Task_industrial_effluent' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_99' sourceRef='Task_stormwater_drainage' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_100' sourceRef='Task_stormwater_drainage' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_101' sourceRef='Task_stormwater_drainage' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_102' sourceRef='Task_other_point_sources' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_103' sourceRef='Task_other_point_sources' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_104' sourceRef='Task_other_point_sources' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_105' sourceRef='Task_geology_and_lithology' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_106' sourceRef='Task_geology_and_lithology' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_107' sourceRef='Task_geology_and_lithology' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_108' sourceRef='Task_other_non_point_sources' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_109' sourceRef='Task_other_non_point_sources' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_110' sourceRef='Task_other_non_point_sources' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_111' sourceRef='Task_historical_sources' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_112' sourceRef='Task_historical_sources' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_113' sourceRef='Task_historical_sources' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_114' sourceRef='Task_fire_smoke_and_ash' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_115' sourceRef='Task_fire_smoke_and_ash' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_116' sourceRef='Task_fire_smoke_and_ash' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_117' sourceRef='Task_animal_wastes' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_118' sourceRef='Task_animal_wastes' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_119' sourceRef='Task_animal_wastes' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_120' sourceRef='Task_mining_wastes' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_121' sourceRef='Task_mining_wastes' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_122' sourceRef='Task_mining_wastes' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_123' sourceRef='Task_septic_systems' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_124' sourceRef='Task_septic_systems' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_125' sourceRef='Task_septic_systems' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_126' sourceRef='Task_landfills' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_127' sourceRef='Task_landfills' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_128' sourceRef='Task_landfills' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_129' sourceRef='Task_applied_fertilizers' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_130' sourceRef='Task_applied_fertilizers' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_131' sourceRef='Task_applied_fertilizers' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_132' sourceRef='Task_vehicle_emissions' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_133' sourceRef='Task_vehicle_emissions' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_134' sourceRef='Task_vehicle_emissions' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_135' sourceRef='Task_industrial_emissions' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_136' sourceRef='Task_industrial_emissions' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_137' sourceRef='Task_industrial_emissions' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_138' sourceRef='Task_decreased_permeability' targetRef='Task_increased_surface_runoff'/>
+<bpmn:sequenceFlow id='Flow_139' sourceRef='Task_increased_surface_runoff' targetRef='Task_increased_erosion'/>
+<bpmn:sequenceFlow id='Flow_140' sourceRef='Task_increased_surface_runoff' targetRef='Task_increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream'/>
+<bpmn:sequenceFlow id='Flow_141' sourceRef='Task_increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream' targetRef='Task_increased_nutrients'/>
+<bpmn:sequenceFlow id='Flow_142' sourceRef='Task_increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream' targetRef='Task_increased_chemical_contaminants'/>
+<bpmn:sequenceFlow id='Flow_143' sourceRef='Task_increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream' targetRef='Task_increased_organic_loading'/>
+<bpmn:sequenceFlow id='Flow_144' sourceRef='Task_increased_erosion' targetRef='Task_increased_delivery_of_chemicals_organic_material_and_nutrients_to_stream'/>
+<bpmn:sequenceFlow id='Flow_145' sourceRef='Task_increased_channel_incision' targetRef='Task_increased_water_depth'/>
+<bpmn:sequenceFlow id='Flow_146' sourceRef='Task_increased_channel_incision' targetRef='Task_increased_erosion'/>
+<bpmn:sequenceFlow id='Flow_147' sourceRef='Task_increased_water_depth' targetRef='Task_decreased_surface_area_to_volume_ratio'/>
+<bpmn:sequenceFlow id='Flow_148' sourceRef='Task_increased_water_depth' targetRef='Task_decreased_turbulence'/>
+<bpmn:sequenceFlow id='Flow_149' sourceRef='Task_decreased_water_velocity__additional_step_in_causal_pathway' targetRef='Task_decreased_turbulence'/>
+<bpmn:sequenceFlow id='Flow_150' sourceRef='Task_decreased_large_woody_debris' targetRef='Task_decreased_turbulence'/>
+<bpmn:sequenceFlow id='Flow_151' sourceRef='Task_altered_flow' targetRef='Task_increased_substrate_homogenization'/>
+<bpmn:sequenceFlow id='Flow_152' sourceRef='Task_sediment' targetRef='Task_increased_substrate_homogenization'/>
+<bpmn:sequenceFlow id='Flow_153' sourceRef='Task_increased_substrate_homogenization' targetRef='Task_decreased_turbulence'/>
+<bpmn:sequenceFlow id='Flow_154' sourceRef='Task_decreased_turbulence' targetRef='Task_decreased_surface_area_to_volume_ratio'/>
+<bpmn:sequenceFlow id='Flow_155' sourceRef='Task_decreased_surface_area_to_volume_ratio' targetRef='Task_decreased_diffusion'/>
+<bpmn:sequenceFlow id='Flow_156' sourceRef='Task_decreased_diffusion' targetRef='Task_decreased_aeration'/>
+<bpmn:sequenceFlow id='Flow_157' sourceRef='Task_decreased_aeration' targetRef='Task_decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_158' sourceRef='Task_increased_chemical_contaminants' targetRef='Task_increased_chemical_oxygen_demand'/>
+<bpmn:sequenceFlow id='Flow_159' sourceRef='Task_increased_organic_loading' targetRef='Task_increased_microbes'/>
+<bpmn:sequenceFlow id='Flow_160' sourceRef='Task_increased_nutrients' targetRef='Task_increased_primary_producers'/>
+<bpmn:sequenceFlow id='Flow_161' sourceRef='Task_increased_nutrients' targetRef='Task_increased_microbes'/>
+<bpmn:sequenceFlow id='Flow_162' sourceRef='Task_increased_nutrients' targetRef='Task_increased_chemical_oxygen_demand'/>
+<bpmn:sequenceFlow id='Flow_163' sourceRef='Task_increased_primary_producers' targetRef='Task_increased_photosynthesis'/>
+<bpmn:sequenceFlow id='Flow_164' sourceRef='Task_increased_primary_producers' targetRef='Task_increased_autotrophic_respiration'/>
+<bpmn:sequenceFlow id='Flow_165' sourceRef='Task_increased_primary_producers' targetRef='Task_increased_organic_matter_retention'/>
+<bpmn:sequenceFlow id='Flow_166' sourceRef='Task_increased_primary_producers' targetRef='Task_increased_detritus_and_exudates'/>
+<bpmn:sequenceFlow id='Flow_167' sourceRef='Task_increased_photosynthesis' targetRef='Task_increased_oxygen_production'/>
+<bpmn:sequenceFlow id='Flow_168' sourceRef='Task_increased_oxygen_production' targetRef='Task_increased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_169' sourceRef='Task_increased_autotrophic_respiration' targetRef='Task_increased_biochemical_oxygen_demand'/>
+<bpmn:sequenceFlow id='Flow_170' sourceRef='Task_increased_organic_matter_retention' targetRef='Task_increased_microbes'/>
+<bpmn:sequenceFlow id='Flow_171' sourceRef='Task_increased_detritus_and_exudates' targetRef='Task_increased_microbes'/>
+<bpmn:sequenceFlow id='Flow_172' sourceRef='Task_increased_microbes' targetRef='Task_increased_heterotrophic_respiration'/>
+<bpmn:sequenceFlow id='Flow_173' sourceRef='Task_increased_heterotrophic_respiration' targetRef='Task_increased_biochemical_oxygen_demand'/>
+<bpmn:sequenceFlow id='Flow_174' sourceRef='Task_upstream_impoundment' targetRef='Task_increased_turbulence'/>
+<bpmn:sequenceFlow id='Flow_175' sourceRef='Task_upstream_impoundment' targetRef='Task_decreased_oxygen_in_discharged_waters'/>
+<bpmn:sequenceFlow id='Flow_176' sourceRef='Task_impoundment_size_and_type_of_release' targetRef='Task_increased_turbulence'/>
+<bpmn:sequenceFlow id='Flow_177' sourceRef='Task_impoundment_size_and_type_of_release' targetRef='Task_decreased_oxygen_in_discharged_waters'/>
+<bpmn:sequenceFlow id='Flow_178' sourceRef='Task_increased_turbulence' targetRef='Task_increased_aeration'/>
+<bpmn:sequenceFlow id='Flow_179' sourceRef='Task_increased_aeration' targetRef='Task_increased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_180' sourceRef='Task_decreased_oxygen_in_discharged_waters' targetRef='Task_decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_181' sourceRef='Task_increased_chemical_oxygen_demand' targetRef='Task_decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_182' sourceRef='Task_increased_biochemical_oxygen_demand' targetRef='Task_decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_183' sourceRef='Task_increased_temperature' targetRef='Task_decreased_oxygen_solubility'/>
+<bpmn:sequenceFlow id='Flow_184' sourceRef='Task_increased_ionic_strength' targetRef='Task_decreased_oxygen_solubility'/>
+<bpmn:sequenceFlow id='Flow_185' sourceRef='Task_increased_sediment' targetRef='Task_decreased_interstitial_flow'/>
+<bpmn:sequenceFlow id='Flow_186' sourceRef='Task_altered_flow' targetRef='Task_decreased_water_velocity__mode_of_action'/>
+<bpmn:sequenceFlow id='Flow_187' sourceRef='Task_decreased_oxygen_solubility' targetRef='Task_decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_188' sourceRef='Task_decreased_interstitial_flow' targetRef='Task_decreased_dissolved_oxygen__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_189' sourceRef='Task_decreased_dissolved_oxygen__water_or_sediment' targetRef='Task_increased_reduction__decreased_Eh'/>
+<bpmn:sequenceFlow id='Flow_190' sourceRef='Task_decreased_dissolved_oxygen__water_or_sediment' targetRef='Task_increased_respiratory_stress'/>
+<bpmn:sequenceFlow id='Flow_191' sourceRef='Task_decreased_dissolved_oxygen__water_or_sediment' targetRef='Task_increased_DO_fluctuation__water_or_sediment'/>
+<bpmn:sequenceFlow id='Flow_192' sourceRef='Task_decreased_water_velocity__mode_of_action' targetRef='Task_decreased_oxygen_delivery'/>
+<bpmn:sequenceFlow id='Flow_193' sourceRef='Task_decreased_oxygen_delivery' targetRef='Task_increased_respiratory_stress'/>
+<bpmn:sequenceFlow id='Flow_194' sourceRef='Task_increased_DO_fluctuation__water_or_sediment' targetRef='Task_increased_respiratory_stress'/>
+<bpmn:sequenceFlow id='Flow_195' sourceRef='Task_increased_respiratory_stress' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_196' sourceRef='Task_increased_respiratory_stress' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_197' sourceRef='Task_increased_dissolved_oxygen__water_or_sediment' targetRef='Task_increased_oxygen_supersaturation'/>
+<bpmn:sequenceFlow id='Flow_198' sourceRef='Task_increased_dissolved_oxygen__water_or_sediment' targetRef='Task_increased_oxidation__increased_Eh'/>
+<bpmn:sequenceFlow id='Flow_199' sourceRef='Task_increased_oxygen_supersaturation' targetRef='Task_increased_gas_bubble_trauma'/>
+<bpmn:sequenceFlow id='Flow_200' sourceRef='Task_increased_oxidation__increased_Eh' targetRef='Task_increased_metal_solubility'/>
+<bpmn:sequenceFlow id='Flow_201' sourceRef='Task_increased_metal_solubility' targetRef='Task_increased_metals'/>
+<bpmn:sequenceFlow id='Flow_202' sourceRef='Task_increased_metals' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_203' sourceRef='Task_increased_gas_bubble_trauma' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_204' sourceRef='Task_change_in_behavior' targetRef='Task_increased_ventilatory_movements'/>
+<bpmn:sequenceFlow id='Flow_205' sourceRef='Task_change_in_behavior' targetRef='Task_increased_gasping_at_water_surface'/>
+<bpmn:sequenceFlow id='Flow_206' sourceRef='Task_change_in_behavior' targetRef='Task_change_in_other_behaviors'/>
+<bpmn:sequenceFlow id='Flow_207' sourceRef='Task_increased_reduction__decreased_Eh' targetRef='Task_increased_phosphate_solubility'/>
+<bpmn:sequenceFlow id='Flow_208' sourceRef='Task_increased_reduction__decreased_Eh' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_209' sourceRef='Task_increased_phosphate_solubility' targetRef='Task_increased_phosphorus'/>
+<bpmn:sequenceFlow id='Flow_210' sourceRef='Task_increased_phosphorus' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_211' sourceRef='Task_increased_ventilatory_movements' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_212' sourceRef='Task_increased_ventilatory_movements' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_213' sourceRef='Task_increased_gasping_at_water_surface' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_214' sourceRef='Task_increased_gasping_at_water_surface' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_215' sourceRef='Task_change_in_other_behaviors' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_216' sourceRef='Task_change_in_other_behaviors' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_217' sourceRef='Task_increased_mortality' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_218' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_change_in_ecosystem_processes'/>
+<bpmn:sequenceFlow id='Flow_219' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_fish_kills'/>
+<bpmn:sequenceFlow id='Flow_220' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_decreased_sensitive_life_stages'/>
+<bpmn:sequenceFlow id='Flow_221' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_decreased_sensitive_taxa'/>
+<bpmn:sequenceFlow id='Flow_222' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_tolerant_taxa'/>
+<bpmn:sequenceFlow id='Flow_223' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_tolerant_life_stages'/>
+<bpmn:sequenceFlow id='Flow_224' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_change_in_other_characteristics'/>
+<bpmn:endEvent id='EndEvent_1'/>
+<bpmn:sequenceFlow id='Flow_end_1' sourceRef='Task_change_in_behavior' targetRef='EndEvent_1'/>
+<bpmn:endEvent id='EndEvent_2'/>
+<bpmn:sequenceFlow id='Flow_end_2' sourceRef='Task_increased_ventilatory_movements' targetRef='EndEvent_2'/>
+<bpmn:endEvent id='EndEvent_3'/>
+<bpmn:sequenceFlow id='Flow_end_3' sourceRef='Task_increased_gasping_at_water_surface' targetRef='EndEvent_3'/>
+<bpmn:endEvent id='EndEvent_4'/>
+<bpmn:sequenceFlow id='Flow_end_4' sourceRef='Task_change_in_other_behaviors' targetRef='EndEvent_4'/>
+<bpmn:endEvent id='EndEvent_5'/>
+<bpmn:sequenceFlow id='Flow_end_5' sourceRef='Task_increased_mortality' targetRef='EndEvent_5'/>
+<bpmn:endEvent id='EndEvent_6'/>
+<bpmn:sequenceFlow id='Flow_end_6' sourceRef='Task_change_in_population_and_community_structure' targetRef='EndEvent_6'/>
+<bpmn:endEvent id='EndEvent_7'/>
+<bpmn:sequenceFlow id='Flow_end_7' sourceRef='Task_change_in_ecosystem_processes' targetRef='EndEvent_7'/>
+<bpmn:endEvent id='EndEvent_8'/>
+<bpmn:sequenceFlow id='Flow_end_8' sourceRef='Task_increased_fish_kills' targetRef='EndEvent_8'/>
+<bpmn:endEvent id='EndEvent_9'/>
+<bpmn:sequenceFlow id='Flow_end_9' sourceRef='Task_decreased_sensitive_life_stages' targetRef='EndEvent_9'/>
+<bpmn:endEvent id='EndEvent_10'/>
+<bpmn:sequenceFlow id='Flow_end_10' sourceRef='Task_decreased_sensitive_taxa' targetRef='EndEvent_10'/>
+<bpmn:endEvent id='EndEvent_11'/>
+<bpmn:sequenceFlow id='Flow_end_11' sourceRef='Task_increased_tolerant_taxa' targetRef='EndEvent_11'/>
+<bpmn:endEvent id='EndEvent_12'/>
+<bpmn:sequenceFlow id='Flow_end_12' sourceRef='Task_increased_tolerant_life_stages' targetRef='EndEvent_12'/>
+<bpmn:endEvent id='EndEvent_13'/>
+<bpmn:sequenceFlow id='Flow_end_13' sourceRef='Task_change_in_other_characteristics' targetRef='EndEvent_13'/>
+</bpmn:process>
+</bpmn:definitions>
