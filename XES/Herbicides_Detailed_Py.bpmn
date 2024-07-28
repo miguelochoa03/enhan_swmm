@@ -1,0 +1,185 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bpmn:definitions xmlns:bpmn='http://www.omg.org/spec/BPMN/20100524/MODEL' id='Definitions_1'>
+<bpmn:process id='Process_1' isExecutable='true'>
+<bpmn:task id='Task_urban_development' name='urban_development'/>
+<bpmn:task id='Task_water_based_recreation' name='water_based_recreation'/>
+<bpmn:task id='Task_industry' name='industry'/>
+<bpmn:task id='Task_forestry_and_silviculture' name='forestry_and_silviculture'/>
+<bpmn:task id='Task_agriculture' name='agriculture'/>
+<bpmn:task id='Task_applied_herbicides__water' name='applied_herbicides__water'/>
+<bpmn:task id='Task_herbicide_manufacturing_plants' name='herbicide_manufacturing_plants'/>
+<bpmn:task id='Task_accidental_or_unpermitted_discharges' name='accidental_or_unpermitted_discharges'/>
+<bpmn:task id='Task_storage_tanks' name='storage_tanks'/>
+<bpmn:task id='Task_other_industrial_facilities' name='other_industrial_facilities'/>
+<bpmn:task id='Task_wastewater_treatment_plants' name='wastewater_treatment_plants'/>
+<bpmn:task id='Task_combined_sewer_overflows' name='combined_sewer_overflows'/>
+<bpmn:task id='Task_golf_courses' name='golf_courses'/>
+<bpmn:task id='Task_lawns_landscaping_and_horticulture' name='lawns_landscaping_and_horticulture'/>
+<bpmn:task id='Task_applied_herbicides__land' name='applied_herbicides__land'/>
+<bpmn:task id='Task_cropfields' name='cropfields'/>
+<bpmn:task id='Task_orchards' name='orchards'/>
+<bpmn:task id='Task_irrigation_return_water' name='irrigation_return_water'/>
+<bpmn:task id='Task_atmospheric_emissions_transport_and_deposition' name='atmospheric_emissions_transport_and_deposition'/>
+<bpmn:task id='Task_direct_effluent_discharges' name='direct_effluent_discharges'/>
+<bpmn:task id='Task_leakage_leachate_and_groundwater_transport' name='leakage_leachate_and_groundwater_transport'/>
+<bpmn:task id='Task_stormwater_runoff' name='stormwater_runoff'/>
+<bpmn:task id='Task_change_in_growth' name='change_in_growth'/>
+<bpmn:task id='Task_decreased_amino_acid_production' name='decreased_amino_acid_production'/>
+<bpmn:task id='Task_decreased_cell_division' name='decreased_cell_division'/>
+<bpmn:task id='Task_decreased_photosynthesis' name='decreased_photosynthesis'/>
+<bpmn:task id='Task_decreased_condition' name='decreased_condition'/>
+<bpmn:task id='Task_increased_tissue_concentrations' name='increased_tissue_concentrations'/>
+<bpmn:task id='Task_decreased_reproduction' name='decreased_reproduction'/>
+<bpmn:task id='Task_increased_mortality' name='increased_mortality'/>
+<bpmn:task id='Task_increased_invertebrate_drift' name='increased_invertebrate_drift'/>
+<bpmn:task id='Task_increased_fish_avoidance' name='increased_fish_avoidance'/>
+<bpmn:task id='Task_change_in_behavior' name='change_in_behavior'/>
+<bpmn:task id='Task_change_in_other_behaviors' name='change_in_other_behaviors'/>
+<bpmn:task id='Task_decreased_plants' name='decreased_plants'/>
+<bpmn:task id='Task_decreased_macrophytes' name='decreased_macrophytes'/>
+<bpmn:task id='Task_decreased_periphyton' name='decreased_periphyton'/>
+<bpmn:task id='Task_decreased_phytoplankton' name='decreased_phytoplankton'/>
+<bpmn:task id='Task_change_in_invertebrates_fish_and_amphibians' name='change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:task id='Task_change_in_community_structure' name='change_in_community_structure'/>
+<bpmn:task id='Task_decreased_richness_or_diversity' name='decreased_richness_or_diversity'/>
+<bpmn:task id='Task_increased_tolerant_taxa' name='increased_tolerant_taxa'/>
+<bpmn:task id='Task_change_in_functional_feeding_groups' name='change_in_functional_feeding_groups'/>
+<bpmn:task id='Task_change_in_other_characteristics' name='change_in_other_characteristics'/>
+<bpmn:task id='Task_change_in_ecosystem_processes' name='change_in_ecosystem_processes'/>
+<bpmn:task id='Task_increased_episodic_exposures' name='increased_episodic_exposures'/>
+<bpmn:task id='Task_change_in_bioavailability_uptake_and_toxicity' name='change_in_bioavailability_uptake_and_toxicity'/>
+<bpmn:task id='Task_increased_continuous_exposures' name='increased_continuous_exposures'/>
+<bpmn:task id='Task_decreased_habitat' name='decreased_habitat'/>
+<bpmn:task id='Task_decreased_food' name='decreased_food'/>
+<bpmn:task id='Task_land_cover_alteration' name='land_cover_alteration'/>
+<bpmn:task id='Task_precipitation' name='precipitation'/>
+<bpmn:task id='Task_timing_and_rate_of_application' name='timing_and_rate_of_application'/>
+<bpmn:task id='Task_environmental_persistence' name='environmental_persistence'/>
+<bpmn:task id='Task_temperature' name='temperature'/>
+<bpmn:task id='Task_pH' name='pH'/>
+<bpmn:task id='Task_dissolved_oxygen' name='dissolved_oxygen'/>
+<bpmn:task id='Task_increased_herbicides_in_water' name='increased_herbicides_in_water'/>
+<bpmn:task id='Task_increased_herbicides_in_sediment' name='increased_herbicides_in_sediment'/>
+<bpmn:task id='Task_spray_drift' name='spray_drift'/>
+<bpmn:sequenceFlow id='Flow_1' sourceRef='Task_urban_development' targetRef='Task_wastewater_treatment_plants'/>
+<bpmn:sequenceFlow id='Flow_2' sourceRef='Task_urban_development' targetRef='Task_lawns_landscaping_and_horticulture'/>
+<bpmn:sequenceFlow id='Flow_3' sourceRef='Task_urban_development' targetRef='Task_combined_sewer_overflows'/>
+<bpmn:sequenceFlow id='Flow_4' sourceRef='Task_urban_development' targetRef='Task_golf_courses'/>
+<bpmn:sequenceFlow id='Flow_5' sourceRef='Task_water_based_recreation' targetRef='Task_applied_herbicides__water'/>
+<bpmn:sequenceFlow id='Flow_6' sourceRef='Task_industry' targetRef='Task_herbicide_manufacturing_plants'/>
+<bpmn:sequenceFlow id='Flow_7' sourceRef='Task_industry' targetRef='Task_other_industrial_facilities'/>
+<bpmn:sequenceFlow id='Flow_8' sourceRef='Task_forestry_and_silviculture' targetRef='Task_applied_herbicides__land'/>
+<bpmn:sequenceFlow id='Flow_9' sourceRef='Task_agriculture' targetRef='Task_cropfields'/>
+<bpmn:sequenceFlow id='Flow_10' sourceRef='Task_agriculture' targetRef='Task_orchards'/>
+<bpmn:sequenceFlow id='Flow_11' sourceRef='Task_applied_herbicides__water' targetRef='Task_increased_herbicides_in_water'/>
+<bpmn:sequenceFlow id='Flow_12' sourceRef='Task_herbicide_manufacturing_plants' targetRef='Task_storage_tanks'/>
+<bpmn:sequenceFlow id='Flow_13' sourceRef='Task_herbicide_manufacturing_plants' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_14' sourceRef='Task_herbicide_manufacturing_plants' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_15' sourceRef='Task_herbicide_manufacturing_plants' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_16' sourceRef='Task_other_industrial_facilities' targetRef='Task_storage_tanks'/>
+<bpmn:sequenceFlow id='Flow_17' sourceRef='Task_other_industrial_facilities' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_18' sourceRef='Task_other_industrial_facilities' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_19' sourceRef='Task_other_industrial_facilities' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_20' sourceRef='Task_accidental_or_unpermitted_discharges' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_21' sourceRef='Task_accidental_or_unpermitted_discharges' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_22' sourceRef='Task_accidental_or_unpermitted_discharges' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_23' sourceRef='Task_storage_tanks' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_24' sourceRef='Task_storage_tanks' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_25' sourceRef='Task_combined_sewer_overflows' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_26' sourceRef='Task_combined_sewer_overflows' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_27' sourceRef='Task_combined_sewer_overflows' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_28' sourceRef='Task_golf_courses' targetRef='Task_applied_herbicides__land'/>
+<bpmn:sequenceFlow id='Flow_29' sourceRef='Task_lawns_landscaping_and_horticulture' targetRef='Task_wastewater_treatment_plants'/>
+<bpmn:sequenceFlow id='Flow_30' sourceRef='Task_lawns_landscaping_and_horticulture' targetRef='Task_applied_herbicides__land'/>
+<bpmn:sequenceFlow id='Flow_31' sourceRef='Task_wastewater_treatment_plants' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_32' sourceRef='Task_wastewater_treatment_plants' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_33' sourceRef='Task_wastewater_treatment_plants' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_34' sourceRef='Task_cropfields' targetRef='Task_applied_herbicides__land'/>
+<bpmn:sequenceFlow id='Flow_35' sourceRef='Task_cropfields' targetRef='Task_irrigation_return_water'/>
+<bpmn:sequenceFlow id='Flow_36' sourceRef='Task_cropfields' targetRef='Task_storage_tanks'/>
+<bpmn:sequenceFlow id='Flow_37' sourceRef='Task_orchards' targetRef='Task_applied_herbicides__land'/>
+<bpmn:sequenceFlow id='Flow_38' sourceRef='Task_orchards' targetRef='Task_irrigation_return_water'/>
+<bpmn:sequenceFlow id='Flow_39' sourceRef='Task_orchards' targetRef='Task_storage_tanks'/>
+<bpmn:sequenceFlow id='Flow_40' sourceRef='Task_storage_tanks' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_41' sourceRef='Task_storage_tanks' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_42' sourceRef='Task_irrigation_return_water' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_43' sourceRef='Task_irrigation_return_water' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_44' sourceRef='Task_applied_herbicides__land' targetRef='Task_spray_drift'/>
+<bpmn:sequenceFlow id='Flow_45' sourceRef='Task_applied_herbicides__land' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_46' sourceRef='Task_applied_herbicides__land' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_47' sourceRef='Task_spray_drift' targetRef='Task_atmospheric_emissions_transport_and_deposition'/>
+<bpmn:sequenceFlow id='Flow_48' sourceRef='Task_atmospheric_emissions_transport_and_deposition' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_49' sourceRef='Task_atmospheric_emissions_transport_and_deposition' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_50' sourceRef='Task_direct_effluent_discharges' targetRef='Task_increased_herbicides_in_water'/>
+<bpmn:sequenceFlow id='Flow_51' sourceRef='Task_direct_effluent_discharges' targetRef='Task_increased_herbicides_in_sediment'/>
+<bpmn:sequenceFlow id='Flow_52' sourceRef='Task_land_cover_alteration' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_53' sourceRef='Task_land_cover_alteration' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_54' sourceRef='Task_precipitation' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_55' sourceRef='Task_precipitation' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_56' sourceRef='Task_timing_and_rate_of_application' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_57' sourceRef='Task_timing_and_rate_of_application' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_58' sourceRef='Task_environmental_persistence' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_59' sourceRef='Task_environmental_persistence' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_60' sourceRef='Task_leakage_leachate_and_groundwater_transport' targetRef='Task_increased_herbicides_in_water'/>
+<bpmn:sequenceFlow id='Flow_61' sourceRef='Task_leakage_leachate_and_groundwater_transport' targetRef='Task_increased_herbicides_in_sediment'/>
+<bpmn:sequenceFlow id='Flow_62' sourceRef='Task_stormwater_runoff' targetRef='Task_increased_herbicides_in_water'/>
+<bpmn:sequenceFlow id='Flow_63' sourceRef='Task_stormwater_runoff' targetRef='Task_increased_herbicides_in_sediment'/>
+<bpmn:sequenceFlow id='Flow_64' sourceRef='Task_environmental_persistence' targetRef='Task_increased_herbicides_in_sediment'/>
+<bpmn:sequenceFlow id='Flow_65' sourceRef='Task_increased_herbicides_in_water' targetRef='Task_increased_episodic_exposures'/>
+<bpmn:sequenceFlow id='Flow_66' sourceRef='Task_increased_herbicides_in_water' targetRef='Task_increased_continuous_exposures'/>
+<bpmn:sequenceFlow id='Flow_67' sourceRef='Task_increased_herbicides_in_sediment' targetRef='Task_increased_episodic_exposures'/>
+<bpmn:sequenceFlow id='Flow_68' sourceRef='Task_increased_herbicides_in_sediment' targetRef='Task_increased_continuous_exposures'/>
+<bpmn:sequenceFlow id='Flow_69' sourceRef='Task_increased_episodic_exposures' targetRef='Task_increased_continuous_exposures'/>
+<bpmn:sequenceFlow id='Flow_70' sourceRef='Task_increased_episodic_exposures' targetRef='Task_change_in_growth'/>
+<bpmn:sequenceFlow id='Flow_71' sourceRef='Task_increased_episodic_exposures' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_72' sourceRef='Task_increased_episodic_exposures' targetRef='Task_decreased_reproduction'/>
+<bpmn:sequenceFlow id='Flow_73' sourceRef='Task_increased_episodic_exposures' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_74' sourceRef='Task_increased_episodic_exposures' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_75' sourceRef='Task_increased_continuous_exposures' targetRef='Task_change_in_growth'/>
+<bpmn:sequenceFlow id='Flow_76' sourceRef='Task_increased_continuous_exposures' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_77' sourceRef='Task_increased_continuous_exposures' targetRef='Task_decreased_reproduction'/>
+<bpmn:sequenceFlow id='Flow_78' sourceRef='Task_increased_continuous_exposures' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_79' sourceRef='Task_increased_continuous_exposures' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_80' sourceRef='Task_temperature' targetRef='Task_change_in_bioavailability_uptake_and_toxicity'/>
+<bpmn:sequenceFlow id='Flow_81' sourceRef='Task_pH' targetRef='Task_change_in_bioavailability_uptake_and_toxicity'/>
+<bpmn:sequenceFlow id='Flow_82' sourceRef='Task_dissolved_oxygen' targetRef='Task_change_in_bioavailability_uptake_and_toxicity'/>
+<bpmn:sequenceFlow id='Flow_83' sourceRef='Task_change_in_bioavailability_uptake_and_toxicity' targetRef='Task_change_in_growth'/>
+<bpmn:sequenceFlow id='Flow_84' sourceRef='Task_change_in_bioavailability_uptake_and_toxicity' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_85' sourceRef='Task_change_in_bioavailability_uptake_and_toxicity' targetRef='Task_decreased_reproduction'/>
+<bpmn:sequenceFlow id='Flow_86' sourceRef='Task_change_in_bioavailability_uptake_and_toxicity' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_87' sourceRef='Task_change_in_bioavailability_uptake_and_toxicity' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_88' sourceRef='Task_change_in_growth' targetRef='Task_decreased_amino_acid_production'/>
+<bpmn:sequenceFlow id='Flow_89' sourceRef='Task_change_in_growth' targetRef='Task_decreased_cell_division'/>
+<bpmn:sequenceFlow id='Flow_90' sourceRef='Task_decreased_condition' targetRef='Task_decreased_photosynthesis'/>
+<bpmn:sequenceFlow id='Flow_91' sourceRef='Task_decreased_condition' targetRef='Task_increased_tissue_concentrations'/>
+<bpmn:sequenceFlow id='Flow_92' sourceRef='Task_decreased_reproduction' targetRef='Task_decreased_plants'/>
+<bpmn:sequenceFlow id='Flow_93' sourceRef='Task_decreased_reproduction' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_94' sourceRef='Task_increased_mortality' targetRef='Task_decreased_plants'/>
+<bpmn:sequenceFlow id='Flow_95' sourceRef='Task_increased_mortality' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_96' sourceRef='Task_change_in_behavior' targetRef='Task_increased_invertebrate_drift'/>
+<bpmn:sequenceFlow id='Flow_97' sourceRef='Task_change_in_behavior' targetRef='Task_increased_fish_avoidance'/>
+<bpmn:sequenceFlow id='Flow_98' sourceRef='Task_change_in_behavior' targetRef='Task_change_in_other_behaviors'/>
+<bpmn:sequenceFlow id='Flow_99' sourceRef='Task_decreased_amino_acid_production' targetRef='Task_decreased_plants'/>
+<bpmn:sequenceFlow id='Flow_100' sourceRef='Task_decreased_cell_division' targetRef='Task_decreased_plants'/>
+<bpmn:sequenceFlow id='Flow_101' sourceRef='Task_decreased_photosynthesis' targetRef='Task_decreased_plants'/>
+<bpmn:sequenceFlow id='Flow_102' sourceRef='Task_increased_tissue_concentrations' targetRef='Task_decreased_plants'/>
+<bpmn:sequenceFlow id='Flow_103' sourceRef='Task_increased_tissue_concentrations' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_104' sourceRef='Task_increased_invertebrate_drift' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_105' sourceRef='Task_increased_fish_avoidance' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_106' sourceRef='Task_change_in_other_behaviors' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_107' sourceRef='Task_decreased_plants' targetRef='Task_decreased_macrophytes'/>
+<bpmn:sequenceFlow id='Flow_108' sourceRef='Task_decreased_plants' targetRef='Task_decreased_phytoplankton'/>
+<bpmn:sequenceFlow id='Flow_109' sourceRef='Task_decreased_plants' targetRef='Task_decreased_periphyton'/>
+<bpmn:sequenceFlow id='Flow_110' sourceRef='Task_decreased_habitat' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_111' sourceRef='Task_decreased_food' targetRef='Task_change_in_invertebrates_fish_and_amphibians'/>
+<bpmn:sequenceFlow id='Flow_112' sourceRef='Task_decreased_macrophytes' targetRef='Task_change_in_community_structure'/>
+<bpmn:sequenceFlow id='Flow_113' sourceRef='Task_decreased_phytoplankton' targetRef='Task_change_in_community_structure'/>
+<bpmn:sequenceFlow id='Flow_114' sourceRef='Task_decreased_periphyton' targetRef='Task_change_in_community_structure'/>
+<bpmn:sequenceFlow id='Flow_115' sourceRef='Task_change_in_invertebrates_fish_and_amphibians' targetRef='Task_change_in_community_structure'/>
+<bpmn:sequenceFlow id='Flow_116' sourceRef='Task_change_in_community_structure' targetRef='Task_decreased_richness_or_diversity'/>
+<bpmn:sequenceFlow id='Flow_117' sourceRef='Task_change_in_community_structure' targetRef='Task_increased_tolerant_taxa'/>
+<bpmn:sequenceFlow id='Flow_118' sourceRef='Task_change_in_community_structure' targetRef='Task_change_in_functional_feeding_groups'/>
+<bpmn:sequenceFlow id='Flow_119' sourceRef='Task_change_in_community_structure' targetRef='Task_change_in_other_characteristics'/>
+<bpmn:sequenceFlow id='Flow_120' sourceRef='Task_change_in_community_structure' targetRef='Task_change_in_ecosystem_processes'/>
+</bpmn:process>
+</bpmn:definitions>
