@@ -1,7 +1,6 @@
 IoT-SITY Research Experience for Undergraduates Research Project
 
-# Project Title
-Enhancing Stormwater Simulation with Process Models and Domain Knowledge
+# On generating realistic water quality event logs through causality-based models
 
 By Miguel Melo Ochoa [IoT-Sity 2024]
 
