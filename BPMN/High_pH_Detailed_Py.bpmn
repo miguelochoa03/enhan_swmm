@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<bpmn:definitions xmlns:bpmn='http://www.omg.org/spec/BPMN/20100524/MODEL' id='Definitions_1'>
+<bpmn:process id='Process_1' isExecutable='true'>
+<bpmn:startEvent id='StartEvent_1'/>
+<bpmn:sequenceFlow id='Flow_start_1' sourceRef='StartEvent_1' targetRef='Task_agriculture'/>
+<bpmn:startEvent id='StartEvent_2'/>
+<bpmn:sequenceFlow id='Flow_start_2' sourceRef='StartEvent_2' targetRef='Task_urbanization'/>
+<bpmn:startEvent id='StartEvent_3'/>
+<bpmn:sequenceFlow id='Flow_start_3' sourceRef='StartEvent_3' targetRef='Task_industry'/>
+<bpmn:startEvent id='StartEvent_4'/>
+<bpmn:sequenceFlow id='Flow_start_4' sourceRef='StartEvent_4' targetRef='Task_mining_and_resource_extraction'/>
+<bpmn:task id='Task_agriculture' name='agriculture'/>
+<bpmn:task id='Task_urbanization' name='urbanization'/>
+<bpmn:task id='Task_industry' name='industry'/>
+<bpmn:task id='Task_mining_and_resource_extraction' name='mining_and_resource_extraction'/>
+<bpmn:task id='Task_cropfields' name='cropfields'/>
+<bpmn:task id='Task_golf_courses' name='golf_courses'/>
+<bpmn:task id='Task_lawns' name='lawns'/>
+<bpmn:task id='Task_impervious_surfaces' name='impervious_surfaces'/>
+<bpmn:task id='Task_asphalt_and_cement_manufacturing_plants' name='asphalt_and_cement_manufacturing_plants'/>
+<bpmn:task id='Task_soap_manufacturing_plants' name='soap_manufacturing_plants'/>
+<bpmn:task id='Task_applied_fertilizers' name='applied_fertilizers'/>
+<bpmn:task id='Task_limestone_gravel_roads' name='limestone_gravel_roads'/>
+<bpmn:task id='Task_asphalt_roads_and_waste' name='asphalt_roads_and_waste'/>
+<bpmn:task id='Task_other_industrial_facilities' name='other_industrial_facilities'/>
+<bpmn:task id='Task_landfills' name='landfills'/>
+<bpmn:task id='Task_geology_and_lithology' name='geology_and_lithology'/>
+<bpmn:task id='Task_stormwater_runoff' name='stormwater_runoff'/>
+<bpmn:task id='Task_leakage_leachate_and_groundwater_transport' name='leakage_leachate_and_groundwater_transport'/>
+<bpmn:task id='Task_oil_and_gas_brines' name='oil_and_gas_brines'/>
+<bpmn:task id='Task_direct_effluent_discharges' name='direct_effluent_discharges'/>
+<bpmn:task id='Task_increased_metal_hydroxide_precipitates' name='increased_metal_hydroxide_precipitates'/>
+<bpmn:task id='Task_increased_armoring_and_smothering' name='increased_armoring_and_smothering'/>
+<bpmn:task id='Task_decreased_ionoregulatory_function' name='decreased_ionoregulatory_function'/>
+<bpmn:task id='Task_decreased_ammonia_excretion' name='decreased_ammonia_excretion'/>
+<bpmn:task id='Task_increased_ion_imbalance' name='increased_ion_imbalance'/>
+<bpmn:task id='Task_decreased_protein_metabolism' name='decreased_protein_metabolism'/>
+<bpmn:task id='Task_change_in_food_availability' name='change_in_food_availability'/>
+<bpmn:task id='Task_decreased_respiratory_function' name='decreased_respiratory_function'/>
+<bpmn:task id='Task_decreased_olfactory_function' name='decreased_olfactory_function'/>
+<bpmn:task id='Task_decreased_chemical_cue_detection' name='decreased_chemical_cue_detection'/>
+<bpmn:task id='Task_increased_gill_hyperplasia' name='increased_gill_hyperplasia'/>
+<bpmn:task id='Task_increased_gill_and_fin_erosion' name='increased_gill_and_fin_erosion'/>
+<bpmn:task id='Task_increased_organ_damage' name='increased_organ_damage'/>
+<bpmn:task id='Task_increased_olfactory_damage' name='increased_olfactory_damage'/>
+<bpmn:task id='Task_decreased_condition' name='decreased_condition'/>
+<bpmn:task id='Task_decreased_growth' name='decreased_growth'/>
+<bpmn:task id='Task_change_in_behavior' name='change_in_behavior'/>
+<bpmn:task id='Task_increased_susceptibility_to_other_stressors' name='increased_susceptibility_to_other_stressors'/>
+<bpmn:task id='Task_increased_lesions_and_skin_damage' name='increased_lesions_and_skin_damage'/>
+<bpmn:task id='Task_increased_other_symptoms' name='increased_other_symptoms'/>
+<bpmn:task id='Task_increased_lethargy' name='increased_lethargy'/>
+<bpmn:task id='Task_change_in_other_behaviors' name='change_in_other_behaviors'/>
+<bpmn:task id='Task_increased_fungal_infection' name='increased_fungal_infection'/>
+<bpmn:task id='Task_increased_epizootic_ulcerative_syndrome' name='increased_epizootic_ulcerative_syndrome'/>
+<bpmn:task id='Task_increased_mortality' name='increased_mortality'/>
+<bpmn:task id='Task_decreased_reproductive_success' name='decreased_reproductive_success'/>
+<bpmn:task id='Task_change_in_population_and_community_structure' name='change_in_population_and_community_structure'/>
+<bpmn:task id='Task_change_in_ecosystem_processes' name='change_in_ecosystem_processes'/>
+<bpmn:task id='Task_decreased_Perciformes' name='decreased_Perciformes'/>
+<bpmn:task id='Task_decreased_sensitive_life_stages' name='decreased_sensitive_life_stages'/>
+<bpmn:task id='Task_decreased_other_sensitive_taxa' name='decreased_other_sensitive_taxa'/>
+<bpmn:task id='Task_decreased_richness_or_diversity' name='decreased_richness_or_diversity'/>
+<bpmn:task id='Task_increased_Cypriniformes' name='increased_Cypriniformes'/>
+<bpmn:task id='Task_increased_tolerant_life_stages' name='increased_tolerant_life_stages'/>
+<bpmn:task id='Task_increased_Cladophora' name='increased_Cladophora'/>
+<bpmn:task id='Task_change_in_other_characteristics' name='change_in_other_characteristics'/>
+<bpmn:task id='Task_increased_Microcystis_and_Coccochloris' name='increased_Microcystis_and_Coccochloris'/>
+<bpmn:task id='Task_increased_other_tolerant_taxa' name='increased_other_tolerant_taxa'/>
+<bpmn:task id='Task_mineral_weathering' name='mineral_weathering'/>
+<bpmn:task id='Task_buffering_capacity' name='buffering_capacity'/>
+<bpmn:task id='Task_light' name='light'/>
+<bpmn:task id='Task_increased_hydroxide_ion_inputs' name='increased_hydroxide_ion_inputs'/>
+<bpmn:task id='Task_increased_photosynthesis' name='increased_photosynthesis'/>
+<bpmn:task id='Task_increased_primary_producers' name='increased_primary_producers'/>
+<bpmn:task id='Task_increased_respiration' name='increased_respiration'/>
+<bpmn:task id='Task_increased_nutrients' name='increased_nutrients'/>
+<bpmn:task id='Task_decreased_pH' name='decreased_pH'/>
+<bpmn:task id='Task_increased_other_stressors' name='increased_other_stressors'/>
+<bpmn:task id='Task_increased_unionized_ammonia' name='increased_unionized_ammonia'/>
+<bpmn:task id='Task_increased_ionic_strength' name='increased_ionic_strength'/>
+<bpmn:task id='Task_increased_pH' name='increased_pH'/>
+<bpmn:task id='Task_increased_pH_fluctuation' name='increased_pH_fluctuation'/>
+<bpmn:sequenceFlow id='Flow_1' sourceRef='Task_agriculture' targetRef='Task_cropfields'/>
+<bpmn:sequenceFlow id='Flow_2' sourceRef='Task_urbanization' targetRef='Task_golf_courses'/>
+<bpmn:sequenceFlow id='Flow_3' sourceRef='Task_urbanization' targetRef='Task_lawns'/>
+<bpmn:sequenceFlow id='Flow_4' sourceRef='Task_urbanization' targetRef='Task_impervious_surfaces'/>
+<bpmn:sequenceFlow id='Flow_5' sourceRef='Task_industry' targetRef='Task_asphalt_and_cement_manufacturing_plants'/>
+<bpmn:sequenceFlow id='Flow_6' sourceRef='Task_industry' targetRef='Task_soap_manufacturing_plants'/>
+<bpmn:sequenceFlow id='Flow_7' sourceRef='Task_industry' targetRef='Task_other_industrial_facilities'/>
+<bpmn:sequenceFlow id='Flow_8' sourceRef='Task_cropfields' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_9' sourceRef='Task_golf_courses' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_10' sourceRef='Task_lawns' targetRef='Task_applied_fertilizers'/>
+<bpmn:sequenceFlow id='Flow_11' sourceRef='Task_impervious_surfaces' targetRef='Task_asphalt_roads_and_waste'/>
+<bpmn:sequenceFlow id='Flow_12' sourceRef='Task_impervious_surfaces' targetRef='Task_limestone_gravel_roads'/>
+<bpmn:sequenceFlow id='Flow_13' sourceRef='Task_asphalt_and_cement_manufacturing_plants' targetRef='Task_asphalt_roads_and_waste'/>
+<bpmn:sequenceFlow id='Flow_14' sourceRef='Task_asphalt_and_cement_manufacturing_plants' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_15' sourceRef='Task_asphalt_and_cement_manufacturing_plants' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_16' sourceRef='Task_other_industrial_facilities' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_17' sourceRef='Task_other_industrial_facilities' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_18' sourceRef='Task_soap_manufacturing_plants' targetRef='Task_landfills'/>
+<bpmn:sequenceFlow id='Flow_19' sourceRef='Task_soap_manufacturing_plants' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_20' sourceRef='Task_applied_fertilizers' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_21' sourceRef='Task_limestone_gravel_roads' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_22' sourceRef='Task_asphalt_roads_and_waste' targetRef='Task_stormwater_runoff'/>
+<bpmn:sequenceFlow id='Flow_23' sourceRef='Task_landfills' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_24' sourceRef='Task_geology_and_lithology' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_25' sourceRef='Task_mining_and_resource_extraction' targetRef='Task_oil_and_gas_brines'/>
+<bpmn:sequenceFlow id='Flow_26' sourceRef='Task_stormwater_runoff' targetRef='Task_increased_hydroxide_ion_inputs'/>
+<bpmn:sequenceFlow id='Flow_27' sourceRef='Task_mineral_weathering' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_28' sourceRef='Task_oil_and_gas_brines' targetRef='Task_leakage_leachate_and_groundwater_transport'/>
+<bpmn:sequenceFlow id='Flow_29' sourceRef='Task_oil_and_gas_brines' targetRef='Task_direct_effluent_discharges'/>
+<bpmn:sequenceFlow id='Flow_30' sourceRef='Task_leakage_leachate_and_groundwater_transport' targetRef='Task_increased_hydroxide_ion_inputs'/>
+<bpmn:sequenceFlow id='Flow_31' sourceRef='Task_direct_effluent_discharges' targetRef='Task_increased_hydroxide_ion_inputs'/>
+<bpmn:sequenceFlow id='Flow_32' sourceRef='Task_increased_hydroxide_ion_inputs' targetRef='Task_increased_pH'/>
+<bpmn:sequenceFlow id='Flow_33' sourceRef='Task_increased_hydroxide_ion_inputs' targetRef='Task_increased_pH_fluctuation'/>
+<bpmn:sequenceFlow id='Flow_34' sourceRef='Task_buffering_capacity' targetRef='Task_increased_pH'/>
+<bpmn:sequenceFlow id='Flow_35' sourceRef='Task_buffering_capacity' targetRef='Task_increased_pH_fluctuation'/>
+<bpmn:sequenceFlow id='Flow_36' sourceRef='Task_increased_nutrients' targetRef='Task_increased_primary_producers'/>
+<bpmn:sequenceFlow id='Flow_37' sourceRef='Task_light' targetRef='Task_increased_primary_producers'/>
+<bpmn:sequenceFlow id='Flow_38' sourceRef='Task_increased_primary_producers' targetRef='Task_increased_photosynthesis'/>
+<bpmn:sequenceFlow id='Flow_39' sourceRef='Task_increased_primary_producers' targetRef='Task_increased_respiration'/>
+<bpmn:sequenceFlow id='Flow_40' sourceRef='Task_increased_pH' targetRef='Task_increased_unionized_ammonia'/>
+<bpmn:sequenceFlow id='Flow_41' sourceRef='Task_increased_pH' targetRef='Task_increased_ionic_strength'/>
+<bpmn:sequenceFlow id='Flow_42' sourceRef='Task_increased_pH' targetRef='Task_increased_pH_fluctuation'/>
+<bpmn:sequenceFlow id='Flow_43' sourceRef='Task_increased_pH' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_44' sourceRef='Task_increased_pH' targetRef='Task_increased_metal_hydroxide_precipitates'/>
+<bpmn:sequenceFlow id='Flow_45' sourceRef='Task_increased_pH' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_46' sourceRef='Task_increased_pH' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_47' sourceRef='Task_increased_pH' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_48' sourceRef='Task_increased_pH' targetRef='Task_decreased_ionoregulatory_function'/>
+<bpmn:sequenceFlow id='Flow_49' sourceRef='Task_increased_pH' targetRef='Task_decreased_ammonia_excretion'/>
+<bpmn:sequenceFlow id='Flow_50' sourceRef='Task_increased_pH' targetRef='Task_change_in_food_availability'/>
+<bpmn:sequenceFlow id='Flow_51' sourceRef='Task_increased_photosynthesis' targetRef='Task_increased_pH'/>
+<bpmn:sequenceFlow id='Flow_52' sourceRef='Task_increased_photosynthesis' targetRef='Task_increased_pH_fluctuation'/>
+<bpmn:sequenceFlow id='Flow_53' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_54' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_increased_metal_hydroxide_precipitates'/>
+<bpmn:sequenceFlow id='Flow_55' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_56' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_57' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_58' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_decreased_ionoregulatory_function'/>
+<bpmn:sequenceFlow id='Flow_59' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_decreased_ammonia_excretion'/>
+<bpmn:sequenceFlow id='Flow_60' sourceRef='Task_increased_pH_fluctuation' targetRef='Task_change_in_food_availability'/>
+<bpmn:sequenceFlow id='Flow_61' sourceRef='Task_increased_metal_hydroxide_precipitates' targetRef='Task_increased_armoring_and_smothering'/>
+<bpmn:sequenceFlow id='Flow_62' sourceRef='Task_decreased_ammonia_excretion' targetRef='Task_decreased_ionoregulatory_function'/>
+<bpmn:sequenceFlow id='Flow_63' sourceRef='Task_decreased_ammonia_excretion' targetRef='Task_decreased_protein_metabolism'/>
+<bpmn:sequenceFlow id='Flow_64' sourceRef='Task_change_in_food_availability' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_65' sourceRef='Task_change_in_food_availability' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_66' sourceRef='Task_change_in_food_availability' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_67' sourceRef='Task_change_in_food_availability' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_68' sourceRef='Task_increased_armoring_and_smothering' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_69' sourceRef='Task_increased_armoring_and_smothering' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_70' sourceRef='Task_increased_armoring_and_smothering' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_71' sourceRef='Task_increased_armoring_and_smothering' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_72' sourceRef='Task_decreased_ionoregulatory_function' targetRef='Task_increased_ion_imbalance'/>
+<bpmn:sequenceFlow id='Flow_73' sourceRef='Task_decreased_ionoregulatory_function' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_74' sourceRef='Task_decreased_ionoregulatory_function' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_75' sourceRef='Task_decreased_ionoregulatory_function' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_76' sourceRef='Task_decreased_ionoregulatory_function' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_77' sourceRef='Task_increased_ion_imbalance' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_78' sourceRef='Task_increased_ion_imbalance' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_79' sourceRef='Task_increased_ion_imbalance' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_80' sourceRef='Task_increased_ion_imbalance' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_81' sourceRef='Task_decreased_protein_metabolism' targetRef='Task_decreased_condition'/>
+<bpmn:sequenceFlow id='Flow_82' sourceRef='Task_decreased_protein_metabolism' targetRef='Task_decreased_growth'/>
+<bpmn:sequenceFlow id='Flow_83' sourceRef='Task_decreased_protein_metabolism' targetRef='Task_change_in_behavior'/>
+<bpmn:sequenceFlow id='Flow_84' sourceRef='Task_decreased_protein_metabolism' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_85' sourceRef='Task_increased_other_stressors' targetRef='Task_increased_susceptibility_to_other_stressors'/>
+<bpmn:sequenceFlow id='Flow_86' sourceRef='Task_increased_respiration' targetRef='Task_decreased_pH'/>
+<bpmn:sequenceFlow id='Flow_87' sourceRef='Task_decreased_condition' targetRef='Task_increased_gill_hyperplasia'/>
+<bpmn:sequenceFlow id='Flow_88' sourceRef='Task_decreased_condition' targetRef='Task_increased_gill_and_fin_erosion'/>
+<bpmn:sequenceFlow id='Flow_89' sourceRef='Task_decreased_condition' targetRef='Task_increased_organ_damage'/>
+<bpmn:sequenceFlow id='Flow_90' sourceRef='Task_decreased_condition' targetRef='Task_increased_olfactory_damage'/>
+<bpmn:sequenceFlow id='Flow_91' sourceRef='Task_decreased_condition' targetRef='Task_increased_lesions_and_skin_damage'/>
+<bpmn:sequenceFlow id='Flow_92' sourceRef='Task_decreased_condition' targetRef='Task_increased_other_symptoms'/>
+<bpmn:sequenceFlow id='Flow_93' sourceRef='Task_decreased_growth' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_94' sourceRef='Task_decreased_growth' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_95' sourceRef='Task_change_in_behavior' targetRef='Task_increased_lethargy'/>
+<bpmn:sequenceFlow id='Flow_96' sourceRef='Task_change_in_behavior' targetRef='Task_change_in_other_behaviors'/>
+<bpmn:sequenceFlow id='Flow_97' sourceRef='Task_increased_susceptibility_to_other_stressors' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_98' sourceRef='Task_increased_susceptibility_to_other_stressors' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_99' sourceRef='Task_increased_gill_hyperplasia' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_100' sourceRef='Task_increased_gill_hyperplasia' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_101' sourceRef='Task_increased_gill_and_fin_erosion' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_102' sourceRef='Task_increased_gill_and_fin_erosion' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_103' sourceRef='Task_increased_gill_and_fin_erosion' targetRef='Task_decreased_respiratory_function'/>
+<bpmn:sequenceFlow id='Flow_104' sourceRef='Task_increased_organ_damage' targetRef='Task_decreased_respiratory_function'/>
+<bpmn:sequenceFlow id='Flow_105' sourceRef='Task_increased_olfactory_damage' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_106' sourceRef='Task_increased_olfactory_damage' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_107' sourceRef='Task_increased_olfactory_damage' targetRef='Task_decreased_olfactory_function'/>
+<bpmn:sequenceFlow id='Flow_108' sourceRef='Task_increased_lesions_and_skin_damage' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_109' sourceRef='Task_increased_lesions_and_skin_damage' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_110' sourceRef='Task_increased_lesions_and_skin_damage' targetRef='Task_increased_fungal_infection'/>
+<bpmn:sequenceFlow id='Flow_111' sourceRef='Task_increased_other_symptoms' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_112' sourceRef='Task_increased_other_symptoms' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_113' sourceRef='Task_increased_lethargy' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_114' sourceRef='Task_increased_lethargy' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_115' sourceRef='Task_change_in_other_behaviors' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_116' sourceRef='Task_change_in_other_behaviors' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_117' sourceRef='Task_decreased_respiratory_function' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_118' sourceRef='Task_decreased_respiratory_function' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_119' sourceRef='Task_decreased_olfactory_function' targetRef='Task_decreased_chemical_cue_detection'/>
+<bpmn:sequenceFlow id='Flow_120' sourceRef='Task_decreased_chemical_cue_detection' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_121' sourceRef='Task_decreased_chemical_cue_detection' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_122' sourceRef='Task_increased_fungal_infection' targetRef='Task_increased_epizootic_ulcerative_syndrome'/>
+<bpmn:sequenceFlow id='Flow_123' sourceRef='Task_increased_epizootic_ulcerative_syndrome' targetRef='Task_increased_mortality'/>
+<bpmn:sequenceFlow id='Flow_124' sourceRef='Task_increased_epizootic_ulcerative_syndrome' targetRef='Task_decreased_reproductive_success'/>
+<bpmn:sequenceFlow id='Flow_125' sourceRef='Task_increased_mortality' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_126' sourceRef='Task_decreased_reproductive_success' targetRef='Task_change_in_population_and_community_structure'/>
+<bpmn:sequenceFlow id='Flow_127' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_decreased_Perciformes'/>
+<bpmn:sequenceFlow id='Flow_128' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_decreased_sensitive_life_stages'/>
+<bpmn:sequenceFlow id='Flow_129' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_decreased_other_sensitive_taxa'/>
+<bpmn:sequenceFlow id='Flow_130' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_decreased_richness_or_diversity'/>
+<bpmn:sequenceFlow id='Flow_131' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_Cypriniformes'/>
+<bpmn:sequenceFlow id='Flow_132' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_Cladophora'/>
+<bpmn:sequenceFlow id='Flow_133' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_tolerant_life_stages'/>
+<bpmn:sequenceFlow id='Flow_134' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_change_in_other_characteristics'/>
+<bpmn:sequenceFlow id='Flow_135' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_Microcystis_and_Coccochloris'/>
+<bpmn:sequenceFlow id='Flow_136' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_increased_other_tolerant_taxa'/>
+<bpmn:sequenceFlow id='Flow_137' sourceRef='Task_change_in_population_and_community_structure' targetRef='Task_change_in_ecosystem_processes'/>
+<bpmn:endEvent id='EndEvent_1'/>
+<bpmn:sequenceFlow id='Flow_end_1' sourceRef='Task_increased_gill_hyperplasia' targetRef='EndEvent_1'/>
+<bpmn:endEvent id='EndEvent_2'/>
+<bpmn:sequenceFlow id='Flow_end_2' sourceRef='Task_increased_gill_and_fin_erosion' targetRef='EndEvent_2'/>
+<bpmn:endEvent id='EndEvent_3'/>
+<bpmn:sequenceFlow id='Flow_end_3' sourceRef='Task_increased_organ_damage' targetRef='EndEvent_3'/>
+<bpmn:endEvent id='EndEvent_4'/>
+<bpmn:sequenceFlow id='Flow_end_4' sourceRef='Task_increased_olfactory_damage' targetRef='EndEvent_4'/>
+<bpmn:endEvent id='EndEvent_5'/>
+<bpmn:sequenceFlow id='Flow_end_5' sourceRef='Task_decreased_condition' targetRef='EndEvent_5'/>
+<bpmn:endEvent id='EndEvent_6'/>
+<bpmn:sequenceFlow id='Flow_end_6' sourceRef='Task_decreased_growth' targetRef='EndEvent_6'/>
+<bpmn:endEvent id='EndEvent_7'/>
+<bpmn:sequenceFlow id='Flow_end_7' sourceRef='Task_change_in_behavior' targetRef='EndEvent_7'/>
+<bpmn:endEvent id='EndEvent_8'/>
+<bpmn:sequenceFlow id='Flow_end_8' sourceRef='Task_increased_susceptibility_to_other_stressors' targetRef='EndEvent_8'/>
+<bpmn:endEvent id='EndEvent_9'/>
+<bpmn:sequenceFlow id='Flow_end_9' sourceRef='Task_increased_lesions_and_skin_damage' targetRef='EndEvent_9'/>
+<bpmn:endEvent id='EndEvent_10'/>
+<bpmn:sequenceFlow id='Flow_end_10' sourceRef='Task_increased_other_symptoms' targetRef='EndEvent_10'/>
+<bpmn:endEvent id='EndEvent_11'/>
+<bpmn:sequenceFlow id='Flow_end_11' sourceRef='Task_increased_lethargy' targetRef='EndEvent_11'/>
+<bpmn:endEvent id='EndEvent_12'/>
+<bpmn:sequenceFlow id='Flow_end_12' sourceRef='Task_change_in_other_behaviors' targetRef='EndEvent_12'/>
+<bpmn:endEvent id='EndEvent_13'/>
+<bpmn:sequenceFlow id='Flow_end_13' sourceRef='Task_increased_fungal_infection' targetRef='EndEvent_13'/>
+<bpmn:endEvent id='EndEvent_14'/>
+<bpmn:sequenceFlow id='Flow_end_14' sourceRef='Task_increased_epizootic_ulcerative_syndrome' targetRef='EndEvent_14'/>
+<bpmn:endEvent id='EndEvent_15'/>
+<bpmn:sequenceFlow id='Flow_end_15' sourceRef='Task_increased_mortality' targetRef='EndEvent_15'/>
+<bpmn:endEvent id='EndEvent_16'/>
+<bpmn:sequenceFlow id='Flow_end_16' sourceRef='Task_decreased_reproductive_success' targetRef='EndEvent_16'/>
+<bpmn:endEvent id='EndEvent_17'/>
+<bpmn:sequenceFlow id='Flow_end_17' sourceRef='Task_change_in_population_and_community_structure' targetRef='EndEvent_17'/>
+<bpmn:endEvent id='EndEvent_18'/>
+<bpmn:sequenceFlow id='Flow_end_18' sourceRef='Task_change_in_ecosystem_processes' targetRef='EndEvent_18'/>
+<bpmn:endEvent id='EndEvent_19'/>
+<bpmn:sequenceFlow id='Flow_end_19' sourceRef='Task_decreased_Perciformes' targetRef='EndEvent_19'/>
+<bpmn:endEvent id='EndEvent_20'/>
+<bpmn:sequenceFlow id='Flow_end_20' sourceRef='Task_decreased_sensitive_life_stages' targetRef='EndEvent_20'/>
+<bpmn:endEvent id='EndEvent_21'/>
+<bpmn:sequenceFlow id='Flow_end_21' sourceRef='Task_decreased_other_sensitive_taxa' targetRef='EndEvent_21'/>
+<bpmn:endEvent id='EndEvent_22'/>
+<bpmn:sequenceFlow id='Flow_end_22' sourceRef='Task_decreased_richness_or_diversity' targetRef='EndEvent_22'/>
+<bpmn:endEvent id='EndEvent_23'/>
+<bpmn:sequenceFlow id='Flow_end_23' sourceRef='Task_increased_Cypriniformes' targetRef='EndEvent_23'/>
+<bpmn:endEvent id='EndEvent_24'/>
+<bpmn:sequenceFlow id='Flow_end_24' sourceRef='Task_increased_tolerant_life_stages' targetRef='EndEvent_24'/>
+<bpmn:endEvent id='EndEvent_25'/>
+<bpmn:sequenceFlow id='Flow_end_25' sourceRef='Task_increased_Cladophora' targetRef='EndEvent_25'/>
+<bpmn:endEvent id='EndEvent_26'/>
+<bpmn:sequenceFlow id='Flow_end_26' sourceRef='Task_change_in_other_characteristics' targetRef='EndEvent_26'/>
+<bpmn:endEvent id='EndEvent_27'/>
+<bpmn:sequenceFlow id='Flow_end_27' sourceRef='Task_increased_Microcystis_and_Coccochloris' targetRef='EndEvent_27'/>
+<bpmn:endEvent id='EndEvent_28'/>
+<bpmn:sequenceFlow id='Flow_end_28' sourceRef='Task_increased_other_tolerant_taxa' targetRef='EndEvent_28'/>
+</bpmn:process>
+</bpmn:definitions>
