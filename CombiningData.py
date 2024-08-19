@@ -92,7 +92,7 @@ def create_set_of_traces(diagram):
 
 def load_xes(diagram):
     
-    log = read_xes(f'C:\\Users\\Anthony\\Desktop\\Python\\XES\\{diagram}_Detailed_Py.xes')
+    log = read_xes(f'C:\\...\\{diagram}_Detailed_Py.xes')
     '''
     # Number of traces in event log
     print(f'Number of traces: {len(log)}')
@@ -108,7 +108,7 @@ def load_xes(diagram):
     
 def load_mapping(diagram):
     
-    df = pd.read_csv(f'C:\\Users\\Anthony\\Desktop\\Python\\Mappings\\{diagram}_Detailed_MAPPING.csv')
+    df = pd.read_csv(f'C:\\...\\{diagram}_Detailed_MAPPING.csv')
     M = mapping(df)
     
     return (M)
@@ -134,7 +134,7 @@ def get_landuse_percentages(sub, landuse):
     landuse_percentage = None
     addedPercent = False
     
-    with open('C:\\Users\\Anthony\\Desktop\\EPA SWMM\\Newport_010423b\\Newport_042220AZ2_edited.inp', 'r') as file:
+    with open('C:\\...\\Newport_042220AZ2_edited.inp', 'r') as file:
         lines_in_file = file.readlines()
         
     inSection = False
@@ -271,7 +271,7 @@ def combine_v1(T, M, G, sim):
     return (D)
 
 def main():
-        with Simulation('C:\\Users\\Anthony\\Desktop\\EPA SWMM\\Newport_010423b\\Newport_042220AZ2_edited.inp') as sim:
+        with Simulation('C:\\...\\Newport_042220AZ2_edited.inp') as sim:
             T = create_set_of_traces("Ammonia")
             M = load_mapping("Ammonia")
             G = create_stormwater_graph(sim)
